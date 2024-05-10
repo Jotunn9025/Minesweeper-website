@@ -1,0 +1,92 @@
+.board{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: min(80vh,80vw);
+    aspect-ratio: 1;
+}
+.tile{
+    margin: 0;
+    inset: 0;
+    height: 100;
+    width: 100%;
+    background-color: white;
+    border: 2px solid gray;
+}
+.mine{
+    background-image: url(Images/mine.png);
+    background-size: contain    ;
+}
+.tileText{
+    font-size: larger;
+    font-weight: bolder;
+}
+.one{
+    color: lightskyblue;
+}
+.two{
+    color: blue;
+}
+.three{
+    color: brown;
+}
+.four{
+    color: maroon;
+}
+.five{
+    color: blueviolet;
+}
+.six{
+    color: darkblue;
+}
+.seven{
+    color: red;
+}
+.eight{
+    color: crimson;
+}
+.hide{
+    color:white;
+    background:none;
+}
+.flagged{
+    background-color: red;
+    color:red;
+}
+#toggle-flag{
+    height:15vh;
+    aspect-ratio: 1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url(Images/hand.png);
+        background-size:cover ;
+    img{
+        height: 100%;
+        width: 100%;
+        
+    }
+}
+.hidden{
+    display: none;
+    
+}
+.tileflag{
+    display: none;
+    z-index: 42;
+    height: 100%;
+    width: 100%;
+}
+.flagged{
+    display: block !important;
+}
+.message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid black;
+    z-index: 9999;
+}
