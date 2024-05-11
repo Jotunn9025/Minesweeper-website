@@ -11,7 +11,11 @@
     height: 100;
     width: 100%;
     background-color: white;
-    border: 2px solid gray;
+    border: 2px solid rgb(65, 65, 65);
+}
+.tile:hover{
+    background-color: rgb(229, 229, 229);
+    color: rgb(229, 229, 229);
 }
 .mine{
     background-image: url(Images/mine.png);
